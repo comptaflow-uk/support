@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ComptaFlow UK by MeeTempo pricing. Standard (£8.99), Plus (£12.99) and VIP (£17.90) plans. 30-day free trial, no card required. WordPress accounting plugin for sole traders and small businesses.">
+
+    <!-- SEO & Indexation -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://comptaflow-uk.meetempo.com/pricing.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pricing - ComptaFlow UK by MeeTempo | Standard, Plus & VIP Plans">
+    <meta property="og:description" content="ComptaFlow UK pricing. Standard (£8.99), Plus (£12.99) and VIP (£17.90) plans. 30-day free trial, no card required.">
+    <meta property="og:url" content="https://comptaflow-uk.meetempo.com/pricing.html">
+    <meta property="og:image" content="https://comptaflow-uk.meetempo.com/images/1-dashboard-overview.PNG">
+    <meta property="og:site_name" content="ComptaFlow UK by MeeTempo">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pricing - ComptaFlow UK by MeeTempo | Standard, Plus & VIP Plans">
+    <meta name="twitter:description" content="Standard (£8.99), Plus (£12.99) and VIP (£17.90) plans. 30-day free trial, no card required. WordPress accounting plugin.">
+    <meta name="twitter:image" content="https://comptaflow-uk.meetempo.com/images/1-dashboard-overview.PNG">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LG929VFSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5LG929VFSC');
+    </script>
+    
+    <link rel="icon" type="image/png" sizes="128x128" href="images/icon-128x128.png">
+    <link rel="apple-touch-icon" href="images/icon-128x128.png">
+    
+    <title>Pricing - ComptaFlow UK by MeeTempo | Standard, Plus & VIP Plans</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #f4f7ff;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4a51e0 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav a { color: white; text-decoration: none; font-weight: 600; opacity: 0.9; }
+        nav a:hover { opacity: 1; }
+        
+        .hero {
+            background: linear-gradient(135deg, #4a51e0 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px 100px;
+            text-align: center;
+        }
+        
+        .hero h1 { font-size: 42px; font-weight: 800; margin-bottom: 15px; }
+        .hero p { font-size: 18px; opacity: 0.9; margin-bottom: 30px; }
+
+        .billing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .toggle-switch {
+            position: relative;
+            width: 54px;
+            height: 28px;
+            background: rgba(255,255,255,0.25);
+            border-radius: 30px;
+            cursor: pointer;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            top: 2px; left: 2px;
+            width: 22px; height: 22px;
+            background: white;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+        
+        .toggle-switch.yearly::after { transform: translateX(26px); }
+        .savings-badge { background: #48bb78; color: white; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 800; }
+
+        .container { max-width: 1200px; margin: -50px auto 0; padding: 0 20px 80px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #edf2f7;
+        }
+        
+        .pricing-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(74, 81, 224, 0.1); }
+        
+        .pricing-card.popular {
+            background: #ffffff;
+            border: 2px solid #4a51e0;
+            position: relative;
+            transform: scale(1.05);
+            z-index: 5;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px; left: 50%;
+            transform: translateX(-50%);
+            background: #ff9800;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 800;
+            box-shadow: 0 4px 10px rgba(255,152,0,0.3);
+        }
+
+        .plan-name { font-size: 14px; font-weight: 800; color: #718096; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .plan-price { font-size: 48px; font-weight: 800; color: #1a202c; margin: 10px 0; letter-spacing: -1px; }
+        .plan-price span { font-size: 16px; color: #a0aec0; font-weight: 500; }
+        .plan-price .price-value { font-size: 52px; font-weight: 800; color: #1a202c; letter-spacing: -2px; }
+        .plan-description { color: #718096; font-size: 14px; margin-bottom: 30px; height: 40px; }
+
+        .features-list { list-style: none; text-align: left; margin-bottom: 30px; flex-grow: 1; }
+        .features-list li { padding: 10px 0; font-size: 15px; color: #4a5568; display: flex; align-items: center; }
+        .features-list li::before { content: "✓"; color: #48bb78; font-weight: 900; margin-right: 12px; }
+        .features-list li.disabled { color: #cbd5e0; }
+        .features-list li.disabled::before { content: "×"; color: #cbd5e0; }
+
+        .cta-button {
+            background: #4a51e0;
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover { background: #373dbd; box-shadow: 0 8px 20px rgba(74, 81, 224, 0.3); }
+
+        .trust-icons { margin-top: 15px; font-size: 11px; color: #a0aec0; font-weight: 600; display: flex; justify-content: center; gap: 8px; align-items: center; }
+
+        .faq-section { background: white; padding: 80px 20px; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: #f8fafc; padding: 25px; border-radius: 12px; margin-bottom: 15px; border: 1px solid #edf2f7; }
+        .faq-question { font-weight: 700; margin-bottom: 10px; color: #2d3748; }
+        .faq-answer { color: #718096; font-size: 15px; }
+
+        footer { background: #1a202c; color: #a0aec0; padding: 40px 20px; text-align: center; }
+        footer a { color: white; text-decoration: none; margin: 0 10px; }
+
+        .loading { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10000; align-items: center; justify-content: center; color: white; }
+        .spinner { border: 4px solid rgba(255,255,255,0.1); border-top: 4px solid white; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin-bottom: 20px; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        .trial-badge-card {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 13px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(16, 185, 129, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .pricing-card.popular { transform: scale(1); margin: 20px 0; }
+            .container { margin-top: -30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ComptaFlow UK by MeeTempo</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="my-account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>A plan for every stage</h1>
+        <p>Master your tax obligations effortlessly and stay fully compliant.</p>
+        
+        <div class="billing-toggle">
+            <span id="monthly-label" style="font-weight: 600;">Monthly</span>
+            <div class="toggle-switch" id="billing-switch" onclick="toggleBilling()"></div>
+            <span id="yearly-label" style="opacity: 0.6; font-weight: 600;">Yearly</span>
+            <span class="savings-badge">4 MONTHS FREE</span>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="plan-name">Standard</div>
+                <div class="plan-price">£8.99<span>/month</span></div>
+                <div class="plan-description">Essential tools for your daily bookkeeping</div>
+                <div class="trial-badge-card">🎁 30-day free trial — No card, no commitment</div>
+                <ul class="features-list">
+                    <li>200 transactions/month</li>
+                    <li>Income & Expenses</li>
+                    <li>HMRC-compliant exports & Trial Balance</li>
+                    <li>Bank reconciliation</li>
+                    <li>Backup & Restore</li>
+                    <li>Companies House API auto-fill</li>
+                    <li class="disabled">Invoicing (Invoices, Quotes)</li>
+                    <li class="disabled">Automatic VAT management</li>
+                </ul>
+                <button class="cta-button" onclick="choosePlan('STANDARD')">Try Standard for free</button>
+                <div class="trust-icons">✅ No credit card required</div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="plan-name">Plus</div>
+                <div class="plan-price">£12.99<span>/month</span></div>
+                <div class="plan-description">The ideal choice for demanding professionals</div>
+                <div class="trial-badge-card">🎁 30-day free trial — No card, no commitment</div>
+                <ul class="features-list">
+                    <li>Unlimited transactions</li>
+                    <li>Everything in Standard +</li>
+                    <li><strong>Invoices, Quotes, Credit Notes</strong></li>
+                    <li>VAT management (Quarterly/Annual)</li>
+                    <li>Fixed Assets & Payroll</li>
+                    <li class="disabled">Year-End Reports</li>
+                    <li class="disabled">Client payment reminders</li>
+                </ul>
+                <button class="cta-button" onclick="choosePlan('PLUS')">Try Plus for free</button>
+                <div class="trust-icons">✅ No credit card required</div>
+            </div>
+
+            <div class="pricing-card popular" id="vip-card">
+                <div class="popular-badge">RECOMMENDED</div>
+                <div class="plan-name" id="vip-name">VIP Monthly</div>
+                <div class="plan-price"><span class="price-value" id="vip-price">£17.90</span><span id="vip-period">/month</span></div>
+                <div class="plan-description" id="vip-description">Complete tax automation</div>
+                <div class="trial-badge-card">🎁 30-day free trial — No card, no commitment</div>
+                <ul class="features-list">
+                    <li>All features included</li>
+                    <li><strong>Invoices, Quotes, Credit Notes</strong></li>
+                    <li><strong>Client reminders (Email + WhatsApp)</strong></li>
+                    <li><strong>Year-End Reports</strong></li>
+                    <li>Backup & Restore</li>
+                    <li>Priority support 7 days/week</li>
+                </ul>
+                <button class="cta-button" id="vip-button" onclick="choosePlan('VIP_MONTHLY')">Try VIP for free</button>
+                <div class="trust-icons">✅ No credit card required</div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; color: #718096; font-size: 14px;">
+            <p>🛡️ 30-day free trial, no card required | No commitment | HMRC compliant</p>
+        </div>
+    </div>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2><br>
+            <div class="faq-item">
+                <div class="faq-question">Can I change plans or cancel?</div>
+                <div class="faq-answer">Yes, ComptaFlow UK is commitment-free. You can upgrade or cancel in one click from your account dashboard.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do I need to enter my card details for the trial?</div>
+                <div class="faq-answer">No. The 30-day trial is 100% free with no card required. At the end of the trial, you choose whether to continue or not. If you subscribe, payments are secured by Stripe, the world leader in online payments.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ComptaFlow UK by MeeTempo</p>
+        <p style="margin-top:10px">
+            <a href="mailto:support@meetempo.com">Contact</a> | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a>
+        </p>
+    </footer>
+
+    <div class="loading" id="loading">
+        <div style="text-align: center;">
+            <div class="spinner"></div>
+            <p>Activating your free trial...</p>
+        </div>
+    </div>
+
+    <script>
+        // TODO: Replace with UK Stripe price IDs when ready
+        const PRICE_IDS = {
+            STANDARD: 'price_UK_STANDARD_PLACEHOLDER',
+            PLUS: 'price_UK_PLUS_PLACEHOLDER',
+            VIP_MONTHLY: 'price_UK_VIP_MONTHLY_PLACEHOLDER',
+            VIP_YEARLY: 'price_UK_VIP_YEARLY_PLACEHOLDER'
+        };
+
+        let currentBilling = 'monthly';
+
+        function toggleBilling() {
+            const billingSwitch = document.getElementById('billing-switch');
+            const monthlyLabel = document.getElementById('monthly-label');
+            const yearlyLabel = document.getElementById('yearly-label');
+            const vipName = document.getElementById('vip-name');
+            const vipPrice = document.getElementById('vip-price');
+            const vipPeriod = document.getElementById('vip-period');
+            const vipDescription = document.getElementById('vip-description');
+            const vipButton = document.getElementById('vip-button');
+            
+            if (currentBilling === 'monthly') {
+                currentBilling = 'yearly';
+                billingSwitch.classList.add('yearly');
+                monthlyLabel.style.opacity = "0.6";
+                yearlyLabel.style.opacity = "1";
+                vipName.textContent = 'VIP Yearly';
+                vipPrice.textContent = '£143';
+                vipPeriod.textContent = '/year';
+                vipDescription.innerHTML = '<strong>🎁 4 MONTHS FREE</strong> (only £11.92/month)';
+                vipButton.setAttribute('onclick', "choosePlan('VIP_YEARLY')");
+            } else {
+                currentBilling = 'monthly';
+                billingSwitch.classList.remove('yearly');
+                monthlyLabel.style.opacity = "1";
+                yearlyLabel.style.opacity = "0.6";
+                vipName.textContent = 'VIP Monthly';
+                vipPrice.textContent = '£17.90';
+                vipPeriod.textContent = '/month';
+                vipDescription.textContent = "Complete tax automation";
+                vipButton.setAttribute('onclick', "choosePlan('VIP_MONTHLY')");
+            }
+        }
+
+        async function choosePlan(plan) {
+            document.getElementById('loading').style.display = 'flex';
+            try {
+                const response = await fetch('https://api-comptaflow.meetempo.com/create-checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        price_id: PRICE_IDS[plan],
+                        success_url: window.location.origin + '/thank-you.html',
+                        cancel_url: window.location.href
+                    })
+                });
+                const data = await response.json();
+                if (data.url) window.location.href = data.url;
+                else throw new Error();
+            } catch (e) {
+                document.getElementById('loading').style.display = 'none';
+                alert("Redirect error. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
