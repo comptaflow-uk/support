@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - ComptaFlow UK by MeeTempo</title>
+    <!-- SEO -->
+    <meta name="description" content="Your ComptaFlow UK subscription is active. Download the plugin and start your accounting.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://comptaflow-uk.meetempo.com/thank-you.html">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LG929VFSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5LG929VFSC');
+    </script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 48px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .success-icon {
+            font-size: 64px;
+            margin-bottom: 24px;
+        }
+        h1 {
+            color: #2d3748;
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            color: #718096;
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+        .license-box {
+            background: #f7fafc;
+            border: 2px solid #667eea;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+        }
+        .license-label {
+            color: #4a5568;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        .license-key {
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            color: #667eea;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            word-break: break-all;
+        }
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .copy-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        .copy-btn.copied {
+            background: #48bb78;
+        }
+        .instructions {
+            text-align: left;
+            margin: 32px 0;
+            padding: 24px;
+            background: #edf2f7;
+            border-radius: 8px;
+        }
+        .instructions h3 {
+            color: #2d3748;
+            margin-bottom: 16px;
+            font-size: 18px;
+        }
+        .instructions ol {
+            margin-left: 20px;
+        }
+        .instructions li {
+            color: #4a5568;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 32px;
+        }
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        .btn-secondary:hover {
+            background: #f7fafc;
+        }
+        .email-notice {
+            background: #bee3f8;
+            border-left: 4px solid #3182ce;
+            padding: 16px;
+            border-radius: 4px;
+            margin: 24px 0;
+            text-align: left;
+        }
+        .email-notice p {
+            color: #2c5282;
+            margin: 0;
+            font-size: 14px;
+        }
+        .loading {
+            text-align: center;
+            padding: 48px;
+        }
+        .spinner {
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .trial-notice {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 14px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 24px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .container { padding: 32px 24px; }
+            h1 { font-size: 24px; }
+            .license-key { font-size: 16px; }
+            .actions { flex-direction: column; }
+            .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p style="color: #718096;">Retrieving your licence...</p>
+        </div>
+
+        <div id="content" style="display: none;">
+            <div class="success-icon">🎉</div>
+            <h1>Thank you for your purchase!</h1>
+            <p class="subtitle">Your payment has been confirmed successfully</p>
+
+            <div class="trial-notice">
+                ✅ Your 30-day free trial has started — No charge for 30 days
+            </div>
+
+            <div class="email-notice">
+                <p>📧 A confirmation email with your licence key has been sent to <strong id="customer-email"></strong></p>
+            </div>
+
+            <div class="license-box">
+                <div class="license-label">Your licence key</div>
+                <div class="license-key" id="license-key">CFUK-XXXX-XXXX-XXXX-XXXX</div>
+                <button class="copy-btn" id="copy-btn" onclick="copyLicense()">
+                    📋 Copy key
+                </button>
+            </div>
+
+            <div class="instructions">
+                <h3>📖 How to activate your licence</h3>
+                <ol>
+                    <li>Download the ComptaFlow UK plugin (link below)</li>
+                    <li>Install it on your WordPress site: <strong>Plugins → Add New → Upload Plugin</strong></li>
+                    <li>Activate the plugin</li>
+                    <li>Go to <strong>ComptaFlow UK → Licence</strong></li>
+                    <li>Paste your licence key and click <strong>"Activate"</strong></li>
+                    <li>✅ That's it! Enjoy all the features</li>
+                </ol>
+            </div>
+
+            <div class="actions">
+                <a href="https://github.com/comptaflow-uk/plugin/releases/latest/download/comptaflow-uk.zip" class="btn btn-primary" onclick="gtag('event', 'download', { 'event_category': 'plugin_pro_uk', 'event_label': 'thank_you_page' });">
+                    📥 Download the plugin
+                </a>
+                <a href="my-account.html" class="btn btn-secondary">
+                    👤 My account
+                </a>
+            </div>
+        </div>
+
+        <div id="error" style="display: none; text-align: center;">
+            <div style="font-size: 48px; margin-bottom: 16px;">😕</div>
+            <h2 style="color: #e53e3e; margin-bottom: 16px;">Retrieval Error</h2>
+            <p style="color: #718096; margin-bottom: 24px;">
+                We could not retrieve your licence key automatically.<br>
+                Please check your email or contact us.
+            </p>
+            <a href="mailto:support@meetempo.com" class="btn btn-primary">
+                📧 Contact support
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // ComptaFlow UK API
+        const API_BASE = 'https://api-comptaflow-uk.meetempo.com';
+
+        async function loadLicense() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sessionId = urlParams.get('session_id');
+
+            if (!sessionId) {
+                showError();
+                return;
+            }
+
+            try {
+                const response = await fetch(API_BASE + '/lookup-license', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ session_id: sessionId })
+                });
+
+                const data = await response.json();
+
+                if (data.success && data.license_key) {
+                    document.getElementById('license-key').textContent = data.license_key;
+                    document.getElementById('customer-email').textContent = data.email || 'your email address';
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                } else {
+                    showError();
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showError();
+            }
+        }
+
+        function showError() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error').style.display = 'block';
+        }
+
+        function copyLicense() {
+            const licenseKey = document.getElementById('license-key').textContent;
+            const btn = document.getElementById('copy-btn');
+
+            navigator.clipboard.writeText(licenseKey).then(() => {
+                btn.textContent = '✅ Key copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = '📋 Copy key';
+                    btn.classList.remove('copied');
+                }, 3000);
+            });
+        }
+
+        // Load licence on page load
+        window.addEventListener('DOMContentLoaded', loadLicense);
+    </script>
+</body>
+</html>
