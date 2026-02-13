@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /cancellation.html
+Disallow: /my-account.html
+Disallow: /legal.html
+Disallow: /terms.html
+Disallow: /privacy.html
+Sitemap: https://comptaflow-uk.meetempo.com/sitemap.xml
