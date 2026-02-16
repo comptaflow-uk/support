@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LG929VFSC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5LG929VFSC');
+    </script>
+    <link rel="icon" type="image/png" sizes="128x128" href="images/icon-128x128.png">
+    <link rel="apple-touch-icon" href="images/icon-128x128.png">
+    <title>WordPress Invoicing Plugin UK | Create Invoices, Quotes & Credit Notes | ComptaFlow UK</title>
+    <meta name="description" content="Create professional invoices, quotes and credit notes directly from WordPress. Automatic numbering, PDF generation, payment tracking, quote-to-invoice conversion. UK-compliant invoicing plugin.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://comptaflow-uk.meetempo.com/invoicing-wordpress.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WordPress Invoicing Plugin UK | ComptaFlow UK">
+    <meta property="og:description" content="Create invoices, quotes and credit notes in WordPress. PDF generation, payment tracking, HMRC-compliant.">
+    <meta property="og:url" content="https://comptaflow-uk.meetempo.com/invoicing-wordpress.html">
+    <meta property="og:image" content="https://comptaflow-uk.meetempo.com/images/10-invoice-form.PNG">
+    <meta property="og:site_name" content="ComptaFlow UK by MeeTempo">
+    <meta property="og:locale" content="en_GB">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #2d3748; line-height: 1.7; }
+        nav { background: white; padding: 16px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: #4a5568; text-decoration: none; font-weight: 500; margin-left: 24px; }
+        nav a:hover { color: #4a51e0; }
+        .logo { font-weight: 700; font-size: 18px; color: #4a51e0; text-decoration: none; }
+        .hero { background: linear-gradient(135deg, #4a51e0 0%, #764ba2 100%); color: white; padding: 80px 24px 60px; text-align: center; }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .hero p { font-size: 20px; opacity: 0.9; max-width: 700px; margin: 0 auto 32px; }
+        .hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-bottom: 24px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
+        h2 { font-size: 30px; color: #2d3748; margin-bottom: 20px; }
+        h3 { font-size: 22px; color: #4a51e0; margin-bottom: 12px; margin-top: 32px; }
+        p { margin-bottom: 16px; color: #4a5568; }
+        .content-section { margin-bottom: 48px; }
+        .info-box { background: #edf2f7; border-left: 4px solid #4a51e0; padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+        .info-box strong { color: #2d3748; }
+        .screenshot { margin: 32px 0; text-align: center; }
+        .screenshot img { max-width: 100%; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); cursor: pointer; }
+        .screenshot p { font-size: 14px; color: #718096; margin-top: 12px; font-style: italic; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin: 32px 0; }
+        .feature-card { background: white; border: 2px solid #e2e8f0; border-radius: 12px; padding: 28px; transition: all 0.3s; }
+        .feature-card:hover { border-color: #4a51e0; box-shadow: 0 4px 15px rgba(74,81,224,0.1); transform: translateY(-2px); }
+        .feature-card h4 { color: #4a51e0; font-size: 18px; margin-bottom: 10px; }
+        .feature-card p { font-size: 14px; margin-bottom: 0; }
+        .workflow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px; margin: 32px 0; padding: 24px; background: #f7fafc; border-radius: 12px; }
+        .workflow-step { background: white; padding: 16px 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-align: center; font-weight: 600; color: #4a51e0; min-width: 140px; }
+        .workflow-arrow { font-size: 24px; color: #a0aec0; }
+        .requirements-list { list-style: none; padding: 0; }
+        .requirements-list li { padding: 10px 0 10px 28px; position: relative; border-bottom: 1px solid #edf2f7; }
+        .requirements-list li::before { content: "✓"; position: absolute; left: 0; color: #48bb78; font-weight: 700; }
+        .cta-section { background: linear-gradient(135deg, #4a51e0 0%, #764ba2 100%); color: white; padding: 60px 24px; text-align: center; margin-top: 48px; border-radius: 16px; }
+        .cta-section h2 { color: white; }
+        .cta-section p { color: rgba(255,255,255,0.9); }
+        .btn { display: inline-block; padding: 16px 32px; border-radius: 8px; font-size: 16px; font-weight: 700; text-decoration: none; transition: all 0.3s; margin: 8px; }
+        .btn-white { background: white; color: #4a51e0; }
+        .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+        .btn-outline { border: 2px solid white; color: white; background: transparent; }
+        .btn-outline:hover { background: rgba(255,255,255,0.1); }
+        footer { text-align: center; padding: 32px 24px; color: #718096; font-size: 14px; }
+        footer a { color: #718096; text-decoration: none; }
+        footer a:hover { color: #4a51e0; }
+        #lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 10000; align-items: center; justify-content: center; cursor: pointer; }
+        #lightbox img { max-width: 90%; max-height: 90%; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .workflow { flex-direction: column; }
+            .workflow-arrow { transform: rotate(90deg); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">ComptaFlow UK</a>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="documentation.html">Documentation</a>
+                <a href="my-account.html">My Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="badge">🧾 WordPress Invoicing</div>
+        <h1>Invoicing in WordPress: Invoices, Quotes & Credit Notes</h1>
+        <p>Create professional, HMRC-compliant invoices directly from your WordPress dashboard. No external tools, no monthly SaaS fees — everything stays in your site.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="content-section">
+            <h2>Why Invoice from WordPress?</h2>
+            <p>Most small businesses use separate tools for their website and their invoicing — often paying two subscriptions for two disconnected systems. With ComptaFlow UK, your invoicing lives inside WordPress alongside your bookkeeping. Every invoice you create automatically generates the correct accounting entries, updates your VAT calculations, and appears on your Profit & Loss report.</p>
+            <p>This means one system, one source of truth, and zero manual re-entry.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Complete Invoicing Workflow</h2>
+            <div class="workflow">
+                <div class="workflow-step">📝 Create Quote</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">✅ Client Accepts</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">🧾 Convert to Invoice</div>
+                <div class="workflow-arrow">→</div>
+                <div class="workflow-step">💰 Mark as Paid</div>
+            </div>
+            <p>ComptaFlow UK supports the complete sales cycle: create a quote, convert it to an invoice in one click when accepted, track payment status, and issue credit notes if needed. Every step creates proper accounting entries automatically.</p>
+
+            <div class="screenshot">
+                <img src="images/29-quote-to-invoice.PNG" alt="Convert quote to invoice in one click" onclick="openLightbox(this.src)">
+                <p>Convert a quote to an invoice in one click — all details carry over automatically</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Invoicing Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>🧾 Professional Invoices</h4>
+                    <p>Clean, professional PDF invoices with your business details, client information, line items, VAT breakdown, and payment terms. Ready to email.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📋 Quotes & Estimates</h4>
+                    <p>Create quotes with the same professional layout. When accepted, convert to invoice in one click — no re-typing required.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>↩️ Credit Notes</h4>
+                    <p>Issue credit notes against invoices for refunds or corrections. Proper accounting entries are created automatically, including VAT adjustments.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🔢 Auto-Numbering</h4>
+                    <p>Sequential invoice numbering (INV-001, INV-002...) generated automatically. Customisable prefix. Quotes and credit notes have their own sequences.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📄 PDF Generation</h4>
+                    <p>One-click PDF generation for every invoice, quote, and credit note. Professional layout with your company details, logo space, and payment information.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>💰 Payment Tracking</h4>
+                    <p>Track payment status: Draft, Sent, Overdue, Paid. Mark invoices as paid with one click. Automatic accounting entry for the payment.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>⏰ Payment Reminders</h4>
+                    <p>See overdue invoices at a glance. Track which clients have been chased and when. Never lose track of unpaid invoices.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>👥 Client Management</h4>
+                    <p>Save client details once and reuse across invoices. Auto-fill from Companies House API. View client history and outstanding balances.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Creating an Invoice</h2>
+            <p>Creating an invoice in ComptaFlow UK takes just a few clicks:</p>
+
+            <div class="screenshot">
+                <img src="images/10-invoice-form.PNG" alt="Invoice creation form" onclick="openLightbox(this.src)">
+                <p>Simple invoice form — select client, add line items, the plugin handles the rest</p>
+            </div>
+
+            <div class="screenshot">
+                <img src="images/14-invoice-detail.PNG" alt="Professional invoice PDF" onclick="openLightbox(this.src)">
+                <p>Professional PDF invoice — ready to download and send to your client</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>UK Invoice Requirements</h2>
+            <p>HMRC requires VAT invoices to include specific information. ComptaFlow UK ensures every invoice meets these requirements:</p>
+            <ul class="requirements-list">
+                <li>A unique, sequential invoice number</li>
+                <li>Your business name and address</li>
+                <li>Your VAT registration number (if applicable)</li>
+                <li>The client's name and address</li>
+                <li>Invoice date and tax point</li>
+                <li>Description of goods or services supplied</li>
+                <li>The net amount, VAT rate, VAT amount, and gross total</li>
+                <li>Payment terms and due date</li>
+            </ul>
+            <div class="info-box">
+                <strong>All handled automatically.</strong> ComptaFlow UK populates your business details from Settings, assigns sequential numbers, calculates VAT, and formats everything in a clean, professional layout.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Credit Notes & Corrections</h2>
+            <p>Need to issue a refund or correct an invoice? ComptaFlow UK's credit note system creates proper accounting entries that reverse the original invoice — including the VAT. Your books stay accurate and HMRC-compliant.</p>
+
+            <div class="screenshot">
+                <img src="images/18-credit-note-posted.PNG" alt="Credit note in ComptaFlow UK" onclick="openLightbox(this.src)">
+                <p>Credit note posted — proper accounting entries created automatically</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Payment Reminders & Chasing</h2>
+            <p>Late payments are a headache for every small business. ComptaFlow UK's reminder system helps you stay on top of outstanding invoices:</p>
+
+            <div class="screenshot">
+                <img src="images/20-reminders-overdue.PNG" alt="Overdue invoice reminders" onclick="openLightbox(this.src)">
+                <p>See all overdue invoices at a glance — with days overdue and total outstanding</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Start Invoicing from WordPress Today</h2>
+            <p>Professional invoicing is included in all Pro plans. From £9.99/month with a 30-day free trial. No credit card required.</p>
+            <div style="margin-top: 24px;">
+                <a href="pricing.html" class="btn btn-white">View Pro Plans</a>
+                <a href="documentation.html" class="btn btn-outline">Read the Docs</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 ComptaFlow UK by MeeTempo — Bookkeeping assistance tool. Does not replace a qualified accountant.</p>
+        <p style="margin-top: 8px;">
+            <a href="mailto:support@meetempo.com">Contact</a> |
+            <a href="legal.html">Legal</a> |
+            <a href="terms.html">Terms</a> |
+            <a href="privacy.html">Privacy</a>
+        </p>
+    </footer>
+
+    <div id="lightbox" onclick="this.style.display='none'">
+        <img id="lightbox-img" src="">
+    </div>
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox-img').src = src;
+        }
+    </script>
+</body>
+</html>
